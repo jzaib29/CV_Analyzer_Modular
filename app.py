@@ -71,7 +71,7 @@ Resume Content:
 \"\"\"{cv_text}\"\"\"
 """
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[
             {"role": "system", "content": "You are an expert technical recruiter and resume evaluator. Always respond with raw JSON without markdown markers."},
             {"role": "user", "content": prompt}
